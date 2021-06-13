@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic tac toe</title>
+</head>
+<body>
+  <div class="tic-tac-toe">
+    <div class="tic-heading">
+      <h4>Welcome to tic tac toe</h4>
+      <form>
+          <h4>Enter your icon</h4>
+        <select class="button" name="dropbox" onchange="playerchoice(this)" style="float : left;">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+      </form>
+      <button class="button" style="float : right" onclick="reset()">Reset</button>
+    </div>
+    <div class="tic-body">
+      <table>
+        <tr id="row-1">
+          <td id="td-xo-1"><button class="xo" id="xo-1" onclick="entervalue(this)"> </button></td>
+          <td id="td-xo-2"><button class="xo" id="xo-2" onclick="entervalue(this)"> </button></td>
+          <td id="td-xo-3"><button class="xo" id="xo-3" onclick="entervalue(this)"> </button></td>
+        </tr>
+        <tr id="row-2">
+          <td id="td-xo-4"><button class="xo" id="xo-4" onclick="entervalue(this)"> </button></td>
+          <td id="td-xo-5"><button class="xo" id="xo-5" onclick="entervalue(this)"> </button></td>
+          <td id="td-xo-6"><button class="xo" id="xo-6" onclick="entervalue(this)"> </button></td>
+        </tr>
+        <tr id="row-3">
+          <td id="td-xo-7"><button class="xo" id="xo-7" onclick="entervalue(this)"> </button></td>
+          <td id="td-xo-8"><button class="xo" id="xo-8" onclick="entervalue(this)"> </button></td>
+          <td id="td-xo-9"><button class="xo" id="xo-9" onclick="entervalue(this)"> </button></td>
+        </tr>
+      </table>
+    </div>
+    <div class="tic-result" id="tic-result">
+      <div id="tic-result-1"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
